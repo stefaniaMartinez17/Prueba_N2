@@ -23,7 +23,7 @@ header {
     display: flex;
     align-items: center;
     justify-content:center;
-    background-color: #ffffff;
+    background-color:#dacfcf;
     box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
     z-index: 200;
 }
@@ -140,7 +140,7 @@ header {
 
 .menu-platos{
   width: 95%;
-  height: 650px;  
+  height: auto;  
   display: flex;
   justify-content: center;
   margin: auto;
@@ -195,6 +195,7 @@ header {
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
     margin: 20px;
     text-align: center;
+    background-color: #dacfcf;
   }
   
   .chefs-lista .personas:hover{
@@ -212,8 +213,8 @@ header {
     margin: 15px;
   }
   
-  .menu-platos p{
-    line-height: 1.9;
+  .chefs-lista p{
+    line-height: 1.5;
   }
   
 
@@ -334,7 +335,9 @@ header {
     .banner__text p {
       margin-top: 30px;
       font-size: 20px;
-    }
+      margin: 50px 20px;
+      }
+    
     
     .banner__text a {
       margin-top: 30px;
