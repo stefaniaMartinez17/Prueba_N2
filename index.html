@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ollies</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header>
+      <a href="./index.html">
+        <img class="logo" src="./img/logo_1.png" alt="Logo Ollies" />
+      </a>
+      <button class="abrir-menu" id="abrir"><i class="bi bi-list"></i></button>
+      <nav class="nav" id="nav">
+        <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
+        <ul class="nav-list">
+          <li><a href="#About"> About </a></li>
+          <li><a href="#Menu"> Menu </a></li>
+          <li><a href="#Chefs"> Chefs </a></li>
+          <li><a href="#form"> Reservas </a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="About" class="banner">
+      <div class="banner__text">
+        <h1>Acerca de nosotros</h1>
+        <p>
+          Ollie's un restaurante chino auténtico que ofrece una amplia variedad
+          de platos tradicionales de la cocina china. Nuestro objetivo es
+          brindar a nuestros clientes una experiencia culinaria excepcional,
+          fusionando sabores auténticos y frescos con un ambiente acogedor y
+          elegante.
+        </p>
+        <a href="#">Conoce más</a>
+      </div>
+    </main>
+
+    <section class="menu" id="Menu">
+      <article class="section-header">
+        <h2>Menu</h2>
+        <p>¡Descubre nuestros platos estrella del mes!</p>
+      </article>
+
+      <article class="menu-platos">
+        <section class="menusp">
+          <img src="./img/menu_1.jpg" alt="menu1" />
+          <h2>Waffles</h2>
+          <p>
+            Deliciosos waffles crujientes, dorados a la perfección, servidos con
+            generosas porciones de blueberries frescas y jugosas. Un dulce y
+            ácido contraste que se funde en tu boca, complementado con un toque
+            de sirope de arce
+          </p>
+        </section>
+
+        <section class="menusp">
+          <img src="./img/menu_2.jpg" alt="menu2" />
+          <h2>Hamburguesa</h2>
+          <p>
+            Jugosa hamburguesa con queso derretido sobre una suculenta carne a
+            la parrilla, cubierta con crujientes vegetales frescos y una
+            generosa salsa especial
+          </p>
+        </section>
+
+        <section class="menusp">
+          <img src="./img/menu_3.jpg" alt="menu3" />
+          <h2>bowl</h2>
+          <p>
+            Un nutritivo y colorido bowl de vegetales frescos y vibrantes. Una
+            mezcla de hojas verdes crujientes, como espinacas y kale,
+            acompañadas de tomates cherry jugosos, zanahorias ralladas, pepinos
+            refrescantes y aguacate cremoso
+          </p>
+        </section>
+      </article>
+    </section>
+
+    <section class="Chefs" id="Chefs">
+      <article class="section-header">
+        <h2>Chefs</h2>
+        <p>
+          Chefs de renombre mundial y expertos en alta cocina, creando platos
+          innovadores con ingredientes exquisitos y técnicas culinarias
+          sofisticadas
+        </p>
+      </article>
+
+      <article class="chefs-lista">
+        <section class="personas">
+          <img src="./img/chef_1.jpg" alt="chef1" />
+          <h2>Chef Sebastian Ross</h2>
+          <p>
+            Un apasionado de la cocina italiana, Rossi es conocido por su
+            habilidad para crear platos auténticos y llenos de sabor, fusionando
+            ingredientes frescos con técnicas tradicionales
+          </p>
+        </section>
+
+        <section class="personas">
+          <img src="./img/chef_2.jpg" alt="chef2" />
+          <h2>Chef Gabriel Torres</h2>
+          <p>
+            Experto en la cocina francesa, Torres es reconocido por su elegancia
+            culinaria y su atención meticulosa a los detalles
+          </p>
+        </section>
+      </article>
+    </section>
+
+    <section class="reservas" id="form">
+      <article class="section-header">
+        <h2>Formulario para reservas</h2>
+        <p>
+          Por favor, complete el siguiente formulario para solicitar su reserva
+          en nuestro restaurante:
+        </p>
+      </article>
+
+      <form class="single-contact">
+        <input type="text" placeholder="Ingresa tu nombre completo" />
+        <input type="email" placeholder="Ingresa tu correo electrónico" />
+        <input type="number" placeholder="Ingresa su número de teléfono" />
+        <input type="date" placeholder="Fecha deseada para la reserva" />
+        <textarea placeholder="Comentario"></textarea>
+        <input type="submit" value="Enviar" />
+      </form>
+    </section>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
