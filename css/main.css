@@ -23,7 +23,7 @@ header {
     display: flex;
     align-items: center;
     justify-content:center;
-    background-color:#dacfcf;
+    background-color: #f8efed;
     box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
     z-index: 200;
 }
@@ -55,8 +55,9 @@ header {
 
 /* Banner*/
 .banner{
-    display: grid;
+    display:grid;
     height: 100vh;
+    width:100%;
     place-items:center;
     text-align: center;
     background-image: url(../img/img_2.jpg);
@@ -85,13 +86,13 @@ header {
     font-family: 'Merriweather', serif;
     color: white;
     font-size: 50px;
-    margin-top: 25px;
+    padding-top: 25px;
   }
   
   .banner__text p{
     color: white;
     font-size: 30px;
-    margin: 50px 80px;
+    padding: 30px 50px;
   }
   
   .banner__text a{
@@ -100,7 +101,7 @@ header {
     font-size: 15px;
     text-transform: uppercase;
     background-color: #7e1212;
-    padding: 10px 20px;
+    padding: 15px 20px;
     display: inline-block;
     margin-top: 20px;
     border-radius: 24px;
@@ -162,23 +163,33 @@ header {
 .menu-platos img{
   width:219px;
   height: 200px;
+  border-radius: 10px;
 }
 
 .menu-platos h2{
   text-transform:capitalize;
   text-align: center;
   margin: 15px;
+  border-top: 5px double #702222;
+  padding-top: 15px;
 }
 
 .menu-platos p{
-  line-height: 1.9;
+  line-height: 1.5;
+  padding: 0 10px 10px 10px;
+  text-align:center;
+}
+
+.negrita{
+  color: #702222;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 /* chefs */
 
 .chefs-lista{
-    width: 50%;
-    height: 650px;  
+    width: 70%; 
     display: flex;
     height: baseline;
     flex-direction: column;
@@ -190,12 +201,11 @@ header {
     display: flex;
     align-items: center;
     width:baseline;
-    height: baseline;  
     border-radius: 20px;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
     margin: 20px;
     text-align: center;
-    background-color: #dacfcf;
+    background-color: #f8efed ;
   }
   
   .chefs-lista .personas:hover{
@@ -203,18 +213,23 @@ header {
     box-shadow: 0 12px 16px rgba(0, 0, 0, 0.5);
   }
   .chefs-lista img{
-    width:200px;
-    height: 300px;
+    width: 200px;
+    padding-top: 0px;
   }
   
   .chefs-lista h2{
+    padding-left:5%;
+    width:200px;
     text-transform:capitalize;
     text-align: center;
-    margin: 15px;
+    
   }
   
   .chefs-lista p{
     line-height: 1.5;
+    text-align: justify;
+    margin-left: 50px;
+    margin-right: 50px;
   }
   
 
@@ -230,6 +245,7 @@ header {
     width: 60%;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
   }
   
   .single-contact input{
@@ -258,6 +274,17 @@ header {
   }
   
 
+/*footer*/
+
+footer {
+  background-color: #dacfcf;
+  padding: 10px;
+  text-align: center;
+}
+
+.contact-info h3 {
+  margin-top: 10px;
+}
 
 /*responsive nav*/
 
@@ -271,7 +298,7 @@ header {
     .cerrar-menu {
         display: block;
         border: 0;
-        font-size: 22px;
+        font-size: 30px;
         background-color: transparent;
         cursor: pointer;
     }
@@ -289,7 +316,7 @@ header {
         top: 0;
         right: 0;
         bottom: 0;
-        width:220px;
+        width:50%;
         opacity: 0;
         visibility: hidden;
         display: flex;
@@ -316,13 +343,9 @@ header {
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 880px) {
     /* Ajustes para pantallas menores a 800px */
-    
-    body {
-      padding: 20px;
-    }
-    
+        
     .banner {
       height: auto;
       padding: 60px 20px;
@@ -330,21 +353,21 @@ header {
     
     .banner__text h1 {
       font-size: 40px;
+      padding-top: 50px;
     }
     
     .banner__text p {
-      margin-top: 30px;
+      padding-top: 30px;
       font-size: 20px;
-      margin: 50px 20px;
+      padding: 50px 20px;
       }
     
     
     .banner__text a {
-      margin-top: 30px;
+      padding-top: 15px;
       font-size: 14px;
     }
     
-   
     .menu-platos{
         width: auto;
         height: auto;  
@@ -360,26 +383,90 @@ header {
     }
     
     .chefs-lista{
-        width: auto;
+        width: 60%;
         height: auto;    
     }
     .chefs-lista .personas{
         flex-wrap:wrap;
         justify-content: center;
       }
-    }
     .chefs-lista img{
         height: auto;
         align-items: center;
+        padding-top: 20px;
+    }
+    .chefs-lista h2{
+      width: 425px;
+      padding:25px 10px 20px 10px;
+    }
+    .chefs-lista p{
+      padding: 0px 10px 10px 10px;
+      width: 425px;
+    }
+  }
+
+
+  @media screen and (max-width: 600px) {
+    /* Ajustes para pantallas menores a 600px */
+        
+    .banner {
+      height: auto;
+      padding: 60px 20px;
     }
     
-    .section-header,
-    .contact {
-      width: 100%;
+    .banner__text h1 {
+      font-size: 40px;
+      padding-top: 50px;
     }
     
-    .section-header p {
-      width: 100%;
-      margin: 0;
+    .banner__text p {
+      padding-top: 30px;
+      font-size: 20px;
+      padding: 50px 20px;
+      }
+    
+    
+    .banner__text a {
+      padding-top: 15px;
+      font-size: 14px;
     }
-  
+    
+    .menu-platos{
+        width: auto;
+        height: auto;  
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .menu-platos img{
+      max-width: 100%;
+      height: auto;
+      max-height: 200px;
+    }
+    
+    .chefs-lista{
+        width: 90%;
+        height: auto;    
+    }
+    .chefs-lista .personas{
+        flex-wrap:wrap;
+        justify-content: center;
+      }
+    .chefs-lista img{
+        height: auto;
+        align-items: center;
+        padding-top: 20px;
+    }
+    .chefs-lista h2{
+      width: 95%;
+      padding:25px 25px 20px 25px;
+    }
+    .chefs-lista p{
+      padding: 0px 10px 10px 10px;
+      width: 95%;
+    }
+    .reservas h2{
+      font-size: 20px;
+    }
+  }
